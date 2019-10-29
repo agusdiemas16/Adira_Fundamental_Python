@@ -52,6 +52,7 @@ customer3_gaji = 9000000
 customer3_existing = True
 customer3_occupation = FIX
 
+#f for format print
 print(f'{nama_program} versi {versi} oleh {author}')
 
 if customer1_existing:
@@ -64,7 +65,6 @@ else: print(f'{customer2_nama} belum pernah memiliki pinjaman')
 if customer3_existing:
     print(f'{customer3_nama} sudah pernah memiliki pinjaman')
 
-    print('haha')
 
 
 
