@@ -141,3 +141,16 @@ print(customer1_alamat['Province'])
 print(customer1_alamat['Zipcode'])
 print(customer1_alamat['Country'])
 
+print('')
+
+#Make Dictionary By Value From Other Variable
+Customer_By_Name = {}
+Customer_By_Name[customer1_nama] = customer1_alamat['Line 1']
+Customer_By_Name[customer2_nama] = customer2_alamat['Line 1']
+Customer_By_Name[customer3_nama] = customer3_alamat['Line 1']
+
+print('Alamat Customer By Name :')
+for name in Customer_By_Name:
+    Alamat = Customer_By_Name[name]
+    print(f'Alamat {name} adalah : {Alamat}')
+
