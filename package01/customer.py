@@ -29,3 +29,14 @@ class Customer:
         else:
             status = 'Kelas Dewa'
         print(f'Gaji {self.nama} {status}, yaitu sebesar {self.gaji}')
+
+    def cari_motor_yang_sesuai(self):
+        if self.gaji < 3000000:
+            recomendation = 'BEAT'
+        elif self.gaji >= 3000000 and self.gaji < 6000000:
+            recomendation = 'VARIO'
+        elif self.gaji >= 6000000 and self.gaji < 9000000:
+            recomendation = 'N-MAX'
+        else:
+            recomendation = 'ADV'
+        print(f'Motor yang cocok untuk {self.nama} untuk penghasilan sebesar {self.gaji} adalah motor {recomendation}')
