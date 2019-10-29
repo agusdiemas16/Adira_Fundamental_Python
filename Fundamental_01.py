@@ -64,6 +64,8 @@ else: print(f'{customer2_nama} belum pernah memiliki pinjaman')
 if customer3_existing:
     print(f'{customer3_nama} sudah pernah memiliki pinjaman')
 
+    print('haha')
+
 
 
 
