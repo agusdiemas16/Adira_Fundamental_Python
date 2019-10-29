@@ -52,7 +52,7 @@ customer3_gaji = 9000000
 customer3_existing = True
 customer3_occupation = FIX
 
-#f for format print
+#f for format print {}
 print(f'{nama_program} versi {versi} oleh {author}')
 
 if customer1_existing:
