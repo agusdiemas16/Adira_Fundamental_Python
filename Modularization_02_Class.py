@@ -82,3 +82,17 @@ print('')
 
 customer1.check_status_peminjaman()
 customer1.check_gaji()
+
+print('')
+
+#Inheritance & Polymorphism
+class CustomerBandel(Customer):
+    def __str__(self):
+        return f'{self.nama} adalah customer bandel ( {Customer.__str__(self)} )'
+
+    def __repr__(self):  # dibutuhkan tipe data string unicode
+        return f'{self.nama} adalah customer bandel ( {Customer.__repr__(self)} )'
+
+customerX = CustomerBandel('XXX', WANITA, 1000, False, NON_FIX, {})
+
+print(customerX)
